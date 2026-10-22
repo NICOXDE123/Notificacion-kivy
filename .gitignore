@@ -1,0 +1,15 @@
+# Entorno virtual (cada PC crea el suyo)
+myenv/
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+
+# Editores
+.vscode/
+.idea/
+
+
+# datos.app.json se incluye a propósito para la entrega.
+# Si no quieres publicar tus notas, descomenta la línea siguiente:
+# datos.app.json

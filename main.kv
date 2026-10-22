@@ -1,0 +1,50 @@
+#:kivy 2.0.0
+MDScreen:
+    md_bg_color: app.theme_cls.backgroundColor
+
+    MDBoxLayout:
+        orientation: "vertical"
+        padding: "24dp"
+        spacing: "12dp"
+
+        MDLabel:
+            text: "Notas guardadas"
+            font_style: "Title"
+            role: "medium"
+            adaptive_height: True
+
+        MDTextField:
+            id: campo_texto
+            mode: "outlined"
+            on_text_validate: app.guardar_texto()
+
+            MDTextFieldHintText:
+                text: "Escribe algo"
+
+        MDButton:
+            style: "filled"
+            size_hint_y: None
+            height: "48dp"
+            on_release: app.guardar_texto()
+
+            MDButtonText:
+                text: "Guardar"
+
+        MDLabel:
+            id: titulo_historial
+            text: "Historial"
+            font_style: "Label"
+            role: "large"
+            adaptive_height: True
+
+        MDLabel:
+            id: mensaje_vacio
+            text: "Todavía no hay notas guardadas."
+            adaptive_height: True
+
+        ScrollView:
+            size_hint_y: 1
+            do_scroll_x: False
+
+            MDList:
+                id: lista_notas 
