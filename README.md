@@ -21,7 +21,7 @@ JSON y muestra una notificación del sistema al guardar.
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/TU-USUARIO/Notificacion-kivy.git
+git clone https://github.com/NICOXDE123/Notificacion-kivy.git
 cd Notificacion-kivy
 
 # 2. Crear el entorno virtual
